@@ -37,31 +37,54 @@
 // 22 3 9 -> 22
 
 
+// Console.Clear();
+
+// Console.WriteLine("Введите число A: ");
+// int numberA = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число B: ");
+// int numberB = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число С: ");
+// int numberC = Convert.ToInt32(Console.ReadLine());
+
+// if (numberA > numberB)
+// {
+//     if (numberA > numberC)
+//     {
+//         Console.WriteLine($"max = {numberA}");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"max = {numberC}");
+//     }
+// }
+// else if (numberB > numberC)
+// {
+//     Console.WriteLine($"max = {numberB}");
+// }
+// else
+// {
+//     Console.WriteLine($"max = {numberC}");
+// }
+
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+// Например:
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+
 Console.Clear();
 
-Console.WriteLine("Введите число A: ");
-int numberA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число B: ");
-int numberB = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число С: ");
-int numberC = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-if (numberA > numberB)
+if ((number % 2) == 0)
 {
-    if (numberA > numberC)
-    {
-        Console.WriteLine($"max = {numberA}");
-    }
-    else
-    {
-        Console.WriteLine($"max = {numberC}");
-    }
-}
-else if (numberB > numberC)
-{
-    Console.WriteLine($"max = {numberB}");
+    Console.WriteLine("Введенное число является четным");
 }
 else
 {
-    Console.WriteLine($"max = {numberC}");
+    Console.WriteLine("Введенное число является нечетным");
 }
